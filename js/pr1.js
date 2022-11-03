@@ -5,8 +5,8 @@ const numbers = [
   1, 2, 3, 5.3, 8, -8, -5.5, -6, -16, -5, -9, 4.2, 5, 12, -6, 45,
 ];
 
-const nums2 = [2, 5, -10, "one", true, 7, "two", 1];
-
+const nums2 = [2, 5, -10, "one", true, 3, "two", 1];
+const nums3 = [true, true, true, true, true, true, true, false];
 // 1. numbers masyvo atrinkti ir grazinti tik sveikuosius skaicius
 /* FILTER
 const sveikiEl = numbers.filter((nb) => Number.isInteger(nb) === true);
@@ -72,4 +72,25 @@ const avg = total / numsOnly.length;
 console.log("avg ===", avg);
 */
 
-// 7. patiktinti ar nums2 masyve yra elementu kurie butu ne skaiciau ir ne string tipo.
+// 7. patiktinti ar nums2 masyve yra elementu kurie butu ne skaiciaus ir ne string tipo.
+// typeof item === "number" || typeof item === "string"
+
+/* function+forEach
+function isNbOrStr(array) {
+  let array2 = "";
+  array.forEach((element) => {
+    if (!(typeof element === "number" || typeof element === "string"))
+      array2 = "yra";
+  });
+  return array2;
+}
+const test = isNbOrStr(nums2);
+console.log("test ===", test);
+*/
+
+/*SOME
+const arr2 = nums2.some(
+  (el) => !(typeof el === "number" || typeof el === "string")
+);
+console.log("arr2 ===", arr2);
+*/
