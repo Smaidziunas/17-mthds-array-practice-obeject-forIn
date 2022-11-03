@@ -60,7 +60,7 @@ console.log("negativeTotal ===", negativeTotal);
 numbers.forEach((nb, i) => console.log(`index ${i}, reiksme ${nb}`));
 */
 
-// 6. .every - patikrinti argrazina true jei vidine fuknkcija visais atvejais grazina True;
+// 6. every - patikrinti argrazina true jei vidine fuknkcija visais atvejais grazina True;
 
 //ar visi el numbers masyve yra skaiciai;
 /*
@@ -79,7 +79,7 @@ const isPos2 = numbers.filter((sk) => sk > 0);
 console.log("isPos2 ===", isPos2);
 */
 
-// 7. .some ar nors vienas elementas atitinka salyga?
+// 7. some - ar nors vienas elementas atitinka salyga?
 // ar yra nors vienas string tipo el musu masyve?
 /*
 const isThereAString = numbers.some((sk) => typeof sk === "string");

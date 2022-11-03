@@ -27,7 +27,6 @@ console.log("totalSum ===", totalSum);
 //   {index: 1, reiksme: 2}
 //    ...
 // ]
-
 /*  MAP
 const numbers2 = numbers.map((nb, idx) => ({ index: idx, reiksme: nb }));
 console.log("numbers2 ===", numbers2);
@@ -38,3 +37,39 @@ console.log("numbers2 ===", numbers2);
 const numbers3 = numbers.map((nb) => parseInt(nb));
 console.log("numbers3 ===", numbers3);
 */
+
+// 5. isrikiuoti numbers masyva nuo didziausio iki maziausio
+/* SORT
+const numbersSrt = numbers.sort(function (a, b) {
+  return b - a;
+});
+console.log("numbersSrt ===", numbersSrt);
+*/
+
+// 6. is nums2 masyvo atrinkti tik skaiciu masyva ir grazinti jo vidurki
+/* REDUCE
+const nbAvg =
+  nums2
+    .filter((nb) => typeof nb === "number")
+    .reduce((total, nb) => {
+      total = total + nb;
+      return total;
+    }, 0) / nums2.filter((nb) => typeof nb === "number").length;
+console.log("nbAvg ===", nbAvg);
+*/
+
+/* forEach
+const numsOnly = nums2.filter((nb) => typeof nb === "number");
+
+let total = 0;
+
+numsOnly.forEach((sk) => {
+  total += sk;
+});
+
+const avg = total / numsOnly.length;
+
+console.log("avg ===", avg);
+*/
+
+// 7. patiktinti ar nums2 masyve yra elementu kurie butu ne skaiciau ir ne string tipo.
