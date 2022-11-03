@@ -54,6 +54,10 @@ console.log("negativeTotal ===", negativeTotal);
 */
 
 // 4. suzinoti ar yra skaicius 5 musu numbers masyve? => includes;
+/* includes()
+const nb5 = numbers.includes(5);
+console.log("nb5 ===", nb5);
+*/
 
 // 5. konsoleje atspausdinti visas reiksmes su indeksais => forEach;
 /*
@@ -81,7 +85,7 @@ console.log("isPos2 ===", isPos2);
 
 // 7. some - ar nors vienas elementas atitinka salyga?
 // ar yra nors vienas string tipo el musu masyve?
-/*
+/* SOME
 const isThereAString = numbers.some((sk) => typeof sk === "string");
 console.log("isThereAString ===", isThereAString);
 */
