@@ -64,14 +64,6 @@ let people = [
   },
 ];
 
-const mainObj = {
-  nums: [1, 2, 5],
-  avg: function () {
-    console.log(this.nums);
-  },
-};
-mainObj.avg();
-
 // taikomes
 // const pplContainer = document.getElementById("people-container");
 
@@ -84,13 +76,17 @@ people.forEach((pObj) => {
   }
 });
 //
-// people.filter((pObj) => pObj.sex === 'male').forEach((pObj) => console.log(pObj));
-const males = people.filter((pObj) => pObj.sex === "male");
-console.log("males ===", males);
-/*
+// people
+//   .filter((pObj) => pObj.sex === "male")
+//   .forEach((pObj) => console.log("pObj", pObj));
+
+// const males = people.filter((pObj) => pObj.sex === "male");
+// console.log("males ===", males);
+
 // 2. konsoleje atspausdinti visas moteris jaunesnes nei 35 metai
 
 // 3. atrinkti i nauja masyva visus žmones kurie turi mašinas
+
 const driversArr = people.filter((pObj) => pObj.hasCar === true);
 // const driversArrK = people.filter(({ hasCar }) => hasCar);
 
@@ -181,4 +177,3 @@ renderList(people, pplContainer);
   <button>isrikiuoti pagal pajamas</button>
   <button>isrikiuoti pagal amziu</button>
 `;
-*/
