@@ -5,7 +5,7 @@ const numbers = [
   1, 2, 3, 5.3, 8, -8, -5.5, -6, -16, -5, -9, 4.2, 5, 12, -6, 45,
 ];
 
-const nums2 = [2, 5, -10, "one", true, 3, "two", 1];
+const nums2 = [2, 5, -10, "one", true, 3, "two", 10];
 const nums3 = [true, true, true, true, true, true, true, false];
 // 1. numbers masyvo atrinkti ir grazinti tik sveikuosius skaicius
 /* FILTER
@@ -47,14 +47,11 @@ console.log("numbersSrt ===", numbersSrt);
 */
 
 // 6. is nums2 masyvo atrinkti tik skaiciu masyva ir grazinti jo vidurki
-/* REDUCE
-const nbAvg =
-  nums2
-    .filter((nb) => typeof nb === "number")
-    .reduce((total, nb) => {
-      total = total + nb;
-      return total;
-    }, 0) / nums2.filter((nb) => typeof nb === "number").length;
+
+/* REDUCE    / nums2.filter((nb) => typeof nb === "number").length
+const nbAvg = nums2
+  .filter((nb) => typeof nb === "number")
+  .reduce((total, nb, i, arr) => total + nb / arr.length, 0);
 console.log("nbAvg ===", nbAvg);
 */
 

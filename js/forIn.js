@@ -11,9 +11,13 @@ const userObj = {
 
 // ======================              forIn                              ====================== \\
 // ciklas per objekta
-/* forIn
+/* forIn - leidzia gauti ir [key] ir [vlaue]
+
 for (let key in userObj) {
-  console.log("key ===", key);
+  //atspausdina key
+  console.log("key ===", key);#
+  
+  // aprasom value; value = obj[key];
   const value = userObj[key];
   console.log("value ===", value);
 }
